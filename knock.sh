@@ -1,5 +1,7 @@
 #!/bin/bash
 
+[ $# -eq 0 ] && { echo "Usage: $0 domain.name wordlist.file"; exit 1; }
+
 domain=$1
 wordlist=$2
 
